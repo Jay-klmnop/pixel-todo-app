@@ -1,0 +1,101 @@
+#room-owner-name {
+  position: absolute;
+  bottom: 4px;
+  right: 6px;
+  font-family: 'neodgm', sans-serif, system-ui;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 7px;
+  z-index: 100;
+}
+
+#character-room {
+  position: relative;
+  width: 250px;
+  aspect-ratio: 4/3;
+  margin: 20px auto;
+  border-width: 4px;
+  border-style: solid;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-image-source: url(../assets/border/border_black_16px.png);
+  border-image-slice: 4;
+  transition: width var(--transition-speed)
+}
+
+.character-item,
+.reward-item {
+  position: absolute;
+  transition: width var(--transition-speed), height var(--transition-speed);
+}
+
+#cat {
+  width: var(--cat-size);
+  height: var(--cat-size);
+  bottom: -5%;
+  z-index: 50;
+  right: -0.1%;
+  transform: translateX(-50%);
+}
+
+#window {
+  width: var(--window-width);
+  left: 65%;
+  z-index: 10;
+  transform: translateX(-50%);
+}
+
+#curtain {
+  width: var(--curtain-width);
+  left: 65%;
+  opacity: 0.6;
+  z-index: 15;
+  transform: translateX(-50%);
+}
+
+#computer {
+  width: var(--computer-width);
+  bottom: 21%;
+  left: 20%;
+  z-index: 25;
+  transform: translateX(-50%);
+}
+
+#coffee_mug {
+  width: var(--coffee_mug-width);
+  bottom: 33%;
+  right: 11%;
+  z-index: 30;
+}
+
+#memo {
+  width: var(--memo-width);
+  top: -1%;
+  left: 18%;
+  z-index: 20;
+  transform: translateX(-50%);
+}
+
+#cat.is-dancing {
+  width: calc(var(--cat-dancing-height)*1.5);
+  height: calc(var(--cat-dancing-height)*0.75);
+  bottom: 6%;
+  z-index: 50;
+  right: -20%;
+}
+
+@media (min-width: 500px) {
+  :root {
+    --cat-size: 160px;
+    --window-width: 288px;
+    --curtain-width: 288px;
+    --computer-width: 184px;
+    --coffee_mug-width: 56px;
+    --memo-width: 100px;
+    --cat-dancing-height: 160px;
+  }
+
+  #character-room {
+    width: 330px;
+  }
+}

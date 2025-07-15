@@ -1,0 +1,60 @@
+main {
+  padding: 20px;
+  margin: auto;
+  max-width: 600px;
+  min-width: 400px;
+  border-width: 4px;
+  border-style: solid;
+  border-image-source: url(../assets/border/border_black_16px.png);
+  border-image-slice: 4;
+  image-rendering: pixelated;
+}
+
+#naming-screen {
+  text-align: center;
+  padding-top: 20vh;
+}
+
+.todo-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto 0;
+  gap: 10px;
+  width: 80%;
+  min-width: 350px;
+}
+
+.list-container {
+  width: 80%;
+  min-width: 350px;
+  min-height: 300px;
+  margin: 5px auto 20px;
+  padding: 12px;
+  box-sizing: border-box;
+  border-width: 4px;
+  border-style: solid;
+  border-image-source: url(../assets/border/border_purple_16px.png);
+  border-image-slice: 4;
+}
+
+.todo-stats {
+  text-align: center;
+  margin-top: 20px;
+}
+
+@media (min-width: 500px) {
+  :root {
+    --cat-size: 160px;
+    --window-width: 288px;
+    --curtain-width: 288px;
+    --computer-width: 184px;
+    --coffee_mug-width: 56px;
+    --memo-width: 100px;
+    --cat-dancing-height: 160px;
+  }
+
+  #character-room {
+    width: 330px;
+  }
+}

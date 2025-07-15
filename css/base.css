@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'neodgm';
+  src: url('../fonts/neodgm.ttf') format('truetype');
+}
+
+:root {
+  --cat-size: 128px;
+  --window-width: 216px;
+  --curtain-width: 216px;
+  --computer-width: 140px;
+  --coffee_mug-width: 40px;
+  --memo-width: 72px;
+  --cat-dancing-height: 128px;
+
+  --transition-speed: 0.3s;
+}
+
+body {
+  font-family: 'neodgm', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Press Start 2P", system-ui;
+  margin: 20px 0 40px;
+}
