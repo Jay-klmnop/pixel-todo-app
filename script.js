@@ -139,7 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function checkAndGiveReward() {
         const completedCount = todos.filter(todo => todo.completed).length;
-        if (completedCount > 0 && completedCount % 5 === 0) {
+        if (completedCount > 0 && completedCount % 5 === 0 && completedCount > lastRewardCount) {
             if (rewardIndex < rewardList.length) {
                 const itemToGive = rewardList[rewardIndex];
                 if (!document.querySelector(`#${itemToGive}`)) {
